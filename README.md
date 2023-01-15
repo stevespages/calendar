@@ -1,5 +1,5 @@
-*Calendar* Class
-==============
+*Calendar* Class v1.0.0
+=======================
 
 Demonstration
 -------------
@@ -22,11 +22,11 @@ The *Calendar* PHP class creates an array which, as well as having keys indicati
 
 A February which starts on a Monday will only span 28 days or exactly 4 weeks so only 28 days will be represented in the *days* array. Other months will span 5 or 6 weeks depending on the day of the week they start on. Months which do not start on a Monday will include the last day(s) of the previous month starting from the last Monday. Months which do not end on a Sunday will include the first day(s) of the next month ending on the first Sunday. 
 
-In order to use the *Calendar* class include the *Calendar.php* file in your project. In the file you want to use it run `require_once './path/to/Calendar.php';'. Then assign the *Calendar* object to a variable, for example, *$calendar*: `$calendar = new Calendar;`. Now invoke it with `$calendar->createMonth();`.
+In order to use the *Calendar* class include the *Calendar.php* file in your project. In any PHP file that you want to use it, run `require_once './path/to/Calendar.php';'. Then assign the *Calendar* object to a variable, for example, *$calendar*: `$calendar = new Calendar;`. Now invoke it with `$calendar->createMonth();`.
 
 If no arguments are supplied it will default to the current year and month. With arguments, the code would look like: `$calendar->createMonth(2023, 1);` for January, 2023. In order to supply one argument but not the other use null as in `$calendar->createMonth(null, 3);`, for March of the current year.
 
-For convenience all PHP statements are shown below:
+For convenience the PHP statements are shown below:
 
 ```php
 require_once './path/to/Calendar.php;
