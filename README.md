@@ -354,3 +354,10 @@ array(5) {
 }
 ```
 
+Releases
+--------
+
+v1.0.0 2022-01-15
+.................
+
+First release. *Calendar:createMonth()* is the only method
