@@ -1,0 +1,9 @@
+/*
+  For styling $calendar->showMth();
+*/
+.prev, .nxt {
+  color: grey;
+}
+table caption a {
+  text-decoration: none;
+}
