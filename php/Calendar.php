@@ -14,7 +14,9 @@ class Calendar {
 
     for($i = 1; $i < $nDaysInMth + 1; $i++) {
       $day = [];
-      $day['day-of-mth'] = $i;
+      $day['yr'] = $yr;
+      $day['mth'] = $mth;
+      $day['day'] = $i;
       $day['prev-curr-nxt'] = 'curr';
       array_push($days, $day);
     }
@@ -41,7 +43,9 @@ class Calendar {
 
     for($i = $nDaysInPrevMth - $nodtsipm + 1; $i < $nDaysInPrevMth + 1; $i++) {
       $day = [];
-      $day['day-of-mth'] = $i;
+      $day['yr'] = $prevYr;
+      $day['mth'] = $prevMth;
+      $day['day'] = $i;
       $day['prev-curr-nxt'] = 'prev';
       array_push($days, $day);
     }
@@ -69,7 +73,9 @@ class Calendar {
 
     for($i = 1; $i < $nodtsinm + 1; $i++) {
       $day = [];
-      $day['day-of-mth'] = $i;
+      $day['yr'] = $nxtYr;
+      $day['mth'] = $nxtMth;
+      $day['day'] = $i;
       $day['prev-curr-nxt'] = 'nxt';
       array_push($days, $day);
     }
