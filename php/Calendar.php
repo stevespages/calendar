@@ -82,12 +82,20 @@ class Calendar {
     return $days;
   }
 
-  public function createMonth($yr = null, $mth = null) {
+  public function createMonth($yr = null, $mth = null, $event) {
     $month = [];
 
-    //Supply current Yr and Mth if not provided as arguments
+    // Supply current Yr and Mth if not provided as arguments
     $yr = $yr ?: intval(date('Y'));
     $mth = $mth ?: intval(date('m'));
+
+    // Supply $event object if not provided
+    $event = $event ?: null;
+
+    if($event){
+
+
+    }
 
     $prevMth = $this->createPrevMth($yr, $mth);
     $currMth = $this->createCurrMth($yr, $mth);
